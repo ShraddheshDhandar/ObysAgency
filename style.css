@@ -24,9 +24,11 @@
 
 html, body {
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
-  color: #222;
+  width: 100%;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 #cursor{
@@ -121,12 +123,15 @@ html, body {
 #main{
     position: relative;
     background-color: #030303;
+    z-index: 99;
 }
 
 #page1{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+    position: relative;
+    z-index: 100;
 }
 
 #page1 #nav{
@@ -167,17 +172,83 @@ html, body {
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7vw;
+    position: relative;
 }
 
-.hero h2, h3{
+/* .hero h2, h3{
     font-size: 7.2vw;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 7vw;
+    line-height: 7.2vw;
+} */
+.hero h2{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+    border-bottom: 0.5vw solid #fff;
+    /* padding-bottom: 0.8vw;
+    transition: all ease 0.3s; */
 }
 
 .hero h2:hover{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
     font-weight: 500;
+<<<<<<< Updated upstream
 }
+=======
+    border-bottom: 0.5vw solid #ffffff00;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 17vh;
+}
+
+
+#video-container{
+    height: 66vh;
+    width: 72vw;
+    position: relative;
+    /* left: 30%; */
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#video-container img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+}
+
+#video-cursor{
+    background-color: #ffa630;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+#video-cursor i{
+    font-size: 2vw;
+}
+>>>>>>> Stashed changes
