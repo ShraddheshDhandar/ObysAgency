@@ -67,7 +67,7 @@ tl.from("#line1-part1",{
     tl.to("#loader",{
         opacity:0,
         duration:0.2,
-        delay:2,
+        delay:0,
     });
 
     tl.from("#page1",{
@@ -86,9 +86,9 @@ tl.from("#line1-part1",{
         y:120,
         stagger:0.2
     })
-    // tl.from("#hero1, #page2",{
-    //     opacity:0,
-    // });
+    tl.from("#hero1, #page2",{
+        opacity:0,
+    });
 
 }
 function cursorAnimation(){
