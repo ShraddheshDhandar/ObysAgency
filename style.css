@@ -25,10 +25,15 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
+/* body {
+    overflow-x: hidden;
+} */
+
 #cursor{
+    pointer-events: none;
     height: 2.5vw;
     width: 2.5vw;
     border-radius: 50%;
@@ -118,20 +123,22 @@ html, body {
 }
 
 #main{
-    height: 100vh;
-    overflow: visible;
     position: relative;
     background-color: #030303;
     z-index: 99;
-    will-change: transform;
 }
 
 #page1{
-    height: 90vh;
+    height: 100vh;
     width: 100%;
-    background-color: #151515;
+    /* background-color: #151515; */
+    overflow: hidden;
+    background-color: #030303;
     position: relative;
     z-index: 100;
+    margin-bottom: 20vh;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 #page1 #nav{
@@ -160,6 +167,7 @@ html, body {
     overflow-y: hidden;
     display: flex;
     align-items: center;
+    
     /* position: relative; */
 }
 
@@ -215,6 +223,7 @@ html, body {
     width: 72vw;
     position: relative;
     /* left: 30%; */
+    margin-left: 27%;
     background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
     background-size: cover;
     background-position: center;
@@ -256,8 +265,50 @@ html, body {
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: relative;
+    padding: 17vh 2vw;
+    margin-bottom: 20vh;
+}
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 28vw;
+}
+
+#page3 h1::before {
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
+}
+
+#page3 .underline{
+    margin-left: 28vw;
+}
+
+#image-div-container{
+    background-color: aqua;
+    padding: 1vw;
+    position: relative;
+}
+
+.image-div{
+    height: 33vw;
+    width: 24vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 #page4{
@@ -436,27 +487,25 @@ html, body {
     align-items: flex-start;
     justify-content: space-between;
     padding-right: 15vw;
-    padding-top: -4.5vw;
-    /* margin-bottom: 2vw ; */
+    padding-top: 4vw;
+    margin-bottom: 6vw ;
 }
 
 #footer-div h6{
     font-size: 0.9vw;
-    margin-bottom: 1vw;
-    font-weight: 500;
+    margin-bottom: 1.5vw;
 }
 
 #footer-div h5{
     font-size: 1.4vw;
     font-weight: 500;
-    margin-bottom: 1vw;
+    
 }
 
-#footer > h5 {
+#footer>h5{
     font-weight: 500;
-    margin-bottom: 4vw;
     font-size: 4vw;
-    }
+}
 
 .box{
     width: 20%;
@@ -469,3 +518,7 @@ html, body {
     margin: 2vw 0;
 }
 
+._canvas_container{
+    z-index: 999999 !important;
+    pointer-events: none;
+}
