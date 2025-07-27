@@ -25,10 +25,7 @@
 html, body {
   height: 100%;
   width: 100%;
-}
-
-body {
-    overflow-x: hidden;
+  overflow: hidden;
 }
 
 #cursor{
@@ -121,9 +118,12 @@ body {
 }
 
 #main{
+    height: 100vh;
+    overflow: visible;
     position: relative;
     background-color: #030303;
     z-index: 99;
+    will-change: transform;
 }
 
 #page1{
@@ -164,7 +164,7 @@ body {
 }
 
 .hero:nth-child(2){
-    margin-top: 18vh;
+    margin-top: 10vh;
 }
 
 .hero h1{
@@ -282,7 +282,7 @@ body {
 #page4-content h1::before {
     content: "03";
     position: absolute;
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: 100;
     font-family: "silk serif";
     left: -12%;
@@ -424,7 +424,7 @@ body {
 #footer h1::before {
     content: "04";
     position: absolute;
-    font-size: 5vw;
+    font-size: 3vw;
     font-weight: 100;
     font-family: "silk serif";
     left: -12%;
@@ -436,25 +436,27 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     padding-right: 15vw;
-    padding-top: 4vw;
-    margin-bottom: 6vw ;
+    padding-top: -4.5vw;
+    /* margin-bottom: 2vw ; */
 }
 
 #footer-div h6{
     font-size: 0.9vw;
-    margin-bottom: 1.5vw;
+    margin-bottom: 1vw;
+    font-weight: 500;
 }
 
 #footer-div h5{
     font-size: 1.4vw;
     font-weight: 500;
+    margin-bottom: 1vw;
 }
 
-#footer>h5{
+#footer > h5 {
     font-weight: 500;
     margin-bottom: 4vw;
     font-size: 4vw;
-}
+    }
 
 .box{
     width: 20%;
