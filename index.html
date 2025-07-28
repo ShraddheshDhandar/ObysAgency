@@ -32,8 +32,8 @@
             <h2>Now</h2>
         </div>
     </div>
-    <div id="main">
-        <div id="page1" data-scroll data-scroll-speed>
+    <div id="main" data-scroll-container>
+        <div id="page1" data-scroll data-scroll-speed="-1">
             <div id="nav">
                 <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
                       <path d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z" fill="currentColor"></path>
@@ -66,7 +66,7 @@
                 <h1>Experience</h1>
             </div>
         </div>
-        <div id="page2" data-scroll data-scroll-speed>
+        <div id="page2" data-scroll data-scroll-speed="2">
             <div id="video-container">
                 <div id="video-cursor">
                     <i class="ri-play-fill"></i>
@@ -76,7 +76,12 @@
             </div>
         </div>
         <div id="page3" data-scroll>
-
+            <div id="image-div-container">
+                <div class="image-div">
+                    <img src="./IMG/img-1_1.png" alt="">
+                    <img src="./IMG/img-1_2.png" alt="">
+                </div>
+            </div>
         </div>
         <div id="page4" data-scroll>
             <div id="page4-content">
@@ -180,6 +185,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
 
 

@@ -95,12 +95,19 @@ function cursorAnimation(){
     document.addEventListener("mousemove",function(dets){
     gsap.to("#cursor",{
         left:dets.x,
-        top:dets.y
+        top:dets.y,
+        right:dets.x,
+        down:dets.y
     })
 })
 
 Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {});
 }
+
+Shery.imageEffect(".image-div", {
+  style: 2,
+  debug: true,
+});
 loadingAnimation()
 cursorAnimation()
 locomotiveAnimation()
