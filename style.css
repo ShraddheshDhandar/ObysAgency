@@ -255,10 +255,61 @@ html, body {
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: aqua;
     position: relative;
+    padding: 17vh 2vw;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
 }
 
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 28vw;
+}
+
+#page3 h1::before {
+    content: "02";
+    position: absolute;
+    font-size: 5vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
+}
+
+#page3 .underline{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 5vw 0;
+    margin-left: 28vw;
+}
+
+#image-div-container{
+    padding: 1vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-div{
+    height: 42vw;
+    width: 31vw;
+    position: relative;
+    overflow: hidden;
+    margin: 1vw;
+    flex-shrink: 0;
+}
+
+.image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 #page4{
     min-height: 100vh;
     width: 100%;
@@ -466,3 +517,7 @@ html, body {
     margin: 2vw 0;
 }
 
+._canvas_container{
+    z-index: 999999 !important;
+    pointer-events: none;
+}
