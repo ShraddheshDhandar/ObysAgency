@@ -1,4 +1,4 @@
-function locomotiveAnimation(){
+functio locomotiveAnimation(){
     gsap.registerPlugin(ScrollTrigger);
 
 // Using Locomotive Scroll from Locomotive https://github.com/locomotivemtl/locomotive-scroll
