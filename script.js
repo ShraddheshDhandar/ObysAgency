@@ -1,3 +1,4 @@
+
 function locomotiveAnimation(){
     gsap.registerPlugin(ScrollTrigger);
 
