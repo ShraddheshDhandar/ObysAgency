@@ -328,6 +328,7 @@ html, body {
     justify-content: center;
     margin-top: 23vh;
     margin-left: 10vw;
+    position: relative;
 }
 
 .page3-circle1 svg{
@@ -343,11 +344,54 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .page3-circle2 svg{
     height: 30%;
     rotate: -45deg;
+}
+
+#circle-in{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+}
+
+#circle-in p{
+    font-size: 0.95vw;
+    color: black;
+    width: 60%;
+    font-weight: 500;
+    scale: 0;
+    transition: all ease 0.3s;
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+
+.page3-circle1:hover #circle-in{
+    scale: 1;
+}
+.page3-circle1:hover #circle-in p{
+    scale: 1;
+    opacity: 1;
+}
+
+.page3-circle2:hover #circle-in{
+    scale: 1;
+}
+.page3-circle2:hover #circle-in p{
+    scale: 1;
+    opacity: 1;
 }
 
 #page4{
