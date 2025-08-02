@@ -290,14 +290,15 @@ html, body {
     padding: 1vw;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: red;
 }
 
 .image-div{
-    height: 42vw;
-    width: 31vw;
+    height: 33vw;
+    width: 24vw;
     position: relative;
     overflow: hidden;
     margin: 1vw;
@@ -310,6 +311,14 @@ html, body {
     object-fit: cover;
     object-position: center;
 }
+
+.page3-circle{
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid #ffff;
+    border-radius: 50%;
+}
+
 #page4{
     min-height: 100vh;
     width: 100%;
