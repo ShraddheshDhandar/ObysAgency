@@ -291,18 +291,24 @@ html, body {
     position: relative;
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 20vh;
     background-color: red;
 }
 
 .image-div{
-    height: 33vw;
-    width: 24vw;
+    height: 38vw;
+    width: 27vw;
     position: relative;
     overflow: hidden;
     margin: 1vw;
     flex-shrink: 0;
+}
+
+.image-div:nth-child(1){
+    height: 29vw;
+    width: 21vw;
 }
 
 .image-div img{
@@ -312,11 +318,36 @@ html, body {
     object-position: center;
 }
 
-.page3-circle{
-    height: 20vw;
-    width: 20vw;
+.page3-circle1{
+    height: 23vw;
+    width: 23vw;
     border: 2px solid #ffff;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23vh;
+    margin-left: 10vw;
+}
+
+.page3-circle1 svg{
+    height: 30%;
+
+}
+
+.page3-circle2{
+    height: 23vw;
+    width: 23vw;
+    border: 2px solid #ffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page3-circle2 svg{
+    height: 30%;
+    rotate: -45deg;
 }
 
 #page4{
