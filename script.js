@@ -98,6 +98,28 @@ function cursorAnimation(){
    });
 
 Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {});
+
+var videoContainer = document.querySelector("#video-container")
+videoContainer.addEventListener("mouseenter", function(){
+    videoContainer.addEventListener("mousemove", function(dets){
+        gsap.to(".mousefollower",{
+            opacity:"none"
+        })
+        gsap.to("#video-cursor",{
+            left:dets.x - 570,
+            y:dets.y - 300
+        })
+    })
+})
+videoContainer.addEventListener("mouseleave",  function(){
+    gsap.to(".mousefollower", {
+        display:"initial",
+    })
+    gsap.to("#video-cursor", {
+        left:"70%",
+        top:"-15%"
+    })
+})
 }
 
 function sheryAnimation(){
