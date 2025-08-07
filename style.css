@@ -27,18 +27,13 @@ html, body {
   width: 100%;
   overflow: hidden;
 }
-
-#cursor{
-    height: 2.5vw;
-    width: 2.5vw;
-    border-radius: 50%;
-    border: 1px solid #ffffff9b;
-    position: fixed;
-    z-index: 9999;
+.mousefollower{
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 255);
+    scale: 2;
     mix-blend-mode: difference;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
 }
+
 
 #loader{
     height: 100%;
@@ -294,7 +289,6 @@ html, body {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-top: 20vh;
-    background-color: red;
 }
 
 .image-div{

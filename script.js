@@ -92,14 +92,10 @@ tl.from("#line1-part1",{
 
 }
 function cursorAnimation(){
-    document.addEventListener("mousemove",function(dets){
-    gsap.to("#cursor",{
-        left:dets.x,
-        top:dets.y,
-        right:dets.x,
-        down:dets.y
-    })
-})
+   Shery.mouseFollower({
+    skew:true,
+    ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+   });
 
 Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {});
 }
