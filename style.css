@@ -410,6 +410,14 @@ html, body {
     opacity: 1;
 }
 
+.page3-circle3:hover #circle-in{
+    scale: 1;
+}
+.page3-circle3:hover #circle-in p{
+    scale: 1;
+    opacity: 1;
+}
+
 #page4{
     min-height: 100vh;
     width: 100%;
