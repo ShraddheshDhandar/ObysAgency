@@ -99,11 +99,12 @@ function cursorAnimation(){
 
 Shery.makeMagnet("#nav-part2 h4" /* Element to target.*/, {});
 
-var videoContainer = document.querySelector("#video-container")
+var videoContainer = document.querySelector("#video-container");
+var video = document.querySelector("#video-container video")
 videoContainer.addEventListener("mouseenter", function(){
     videoContainer.addEventListener("mousemove", function(dets){
         gsap.to(".mousefollower",{
-            opacity:"none"
+            opacity:0
         })
         gsap.to("#video-cursor",{
             left:dets.x - 570,
@@ -113,11 +114,22 @@ videoContainer.addEventListener("mouseenter", function(){
 })
 videoContainer.addEventListener("mouseleave",  function(){
     gsap.to(".mousefollower", {
-        display:"initial",
+        opacity:1
     })
     gsap.to("#video-cursor", {
         left:"70%",
         top:"-15%"
+    })
+})
+
+
+var flag= 0
+videoContainer.addEventListener("click", function(){
+    video.play(),
+    video.style.opacity=1
+    document.querySelector("video-cursor").innerHTML =`<i  class="ri-pause-fill"></i>`
+    gsap.to("#ideo-cursor",{
+        scale:0.5
     })
 })
 }
