@@ -185,8 +185,8 @@ html, body {
     text-transform: uppercase;
     line-height: 7.2vw;
     border-bottom: 0.5vw solid #fff;
-    /* padding-bottom: 0.8vw;
-    transition: all ease 0.3s; */
+    padding-top: 1.5vw;
+    /* transition: all ease 0.3s; */
 }
 
 .hero h2:hover{
@@ -580,6 +580,24 @@ html, body {
     font-family: "silk serif";
     left: -12%;
     top: 8%;
+}
+
+#footer-text h2 {
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    position: absolute;
+    top: -10%;
+    font-weight: 500;
+
+    left: 0;
+    font-family: "silk serif";
+}
+
+#footer-text h2 span {
+    font-family: "silk serif";
+    opacity: 0;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
 }
 
 #footer-div{
