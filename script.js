@@ -212,36 +212,31 @@ function footerAnimation() {
   // })
 
 
-  $(document).ready(function(){
-    $('.tlt').textillate({
-        loop: true,
-        minDisplayTime: 2000,
-        initialDelay: 0,
-        in: {
-            effect: 'fadeIn',
-            delayScale: 1.5,
-            delay: 50,
-            sync: false
-        },
-        out: {
-            effect: 'fadeOut',
-            delayScale: 1.5,
-            delay: 50,
-            sync: false
-        }
-    });
-});
+//   $(document).ready(function(){
+//     $('.tlt').textillate({
+//         loop: true,
+//         minDisplayTime: 2000,
+//         initialDelay: 0,
+//         in: {
+//             effect: 'fadeIn',
+//             delayScale: 1.5,
+//             delay: 50,
+//             sync: false
+//         },
+//         out: {
+//             effect: 'fadeOut',
+//             delayScale: 1.5,
+//             delay: 50,
+//             sync: false
+//         }
+//     });
+// });
 
 }
 
 loadingAnimation()
 cursorAnimation()
-// locomotiveAnimation()
+locomotiveAnimation()
 sheryAnimation()
 flagAnimation()
-// footerAnimation()
-
-window.addEventListener('load', () => {
-    locomotiveAnimation();
-    footerTextAnimation();
-});
+footerAnimation()

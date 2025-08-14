@@ -654,3 +654,13 @@ html, body {
     position: relative;
     z-index: 999;
 }
+
+@media (max-width:600px) {
+    #page1{
+        height: 70vh;
+        width: 100%;
+        position: relative;
+        z-index: 100;
+    }
+    
+}
