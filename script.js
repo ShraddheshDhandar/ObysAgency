@@ -175,63 +175,20 @@ function flagAnimation() {
 
 function footerAnimation() {
 
-  // var clutter = ""
-  // var clutter2 = ""
-  // document.querySelector("#footer h1").textContent.split("").forEach(function (elem) {
-  //   clutter += `<span>${elem}</span>`
-  // })
-  // document.querySelector("#footer h1").innerHTML = clutter
-  // document.querySelector("#footer h2").textContent.split("").forEach(function (elem) {
-  //   clutter2 += `<span>${elem}</span>`
-  // })
-  // document.querySelector("#footer h2").innerHTML = clutter2
-
-
-  // document.querySelector("#footer h1").addEventListener("mouseenter", function () {
-  //   gsap.to("#footer h1 span", {
-  //     opacity: 0,
-  //     stagger: 0.05
-  //   })
-  //   gsap.to("#footer h2 span", {
-  //     delay: 0.35,
-  //     opacity: 1,
-  //     stagger: 0.1
-  //   })
-  // })
-  // document.querySelector("#footer h1").addEventListener("mouseleave", function () {
-  //   gsap.to("#footer h1 span", {
-  //     opacity: 1,
-  //     stagger: 0.1,
-  //     delay: 0.35,
-
-  //   })
-  //   gsap.to("#footer h2 span", {
-  //     opacity: 0,
-  //     stagger: 0.05
-  //   })
-  // })
-
-
-//   $(document).ready(function(){
-//     $('.tlt').textillate({
-//         loop: true,
-//         minDisplayTime: 2000,
-//         initialDelay: 0,
-//         in: {
-//             effect: 'fadeIn',
-//             delayScale: 1.5,
-//             delay: 50,
-//             sync: false
-//         },
-//         out: {
-//             effect: 'fadeOut',
-//             delayScale: 1.5,
-//             delay: 50,
-//             sync: false
-//         }
-//     });
-// });
-
+    $(document).ready(function(){
+        $('.tlt').textillate({
+            loop: false,
+            minDisplayTime: 2000,
+            initialDelay: 0,
+            in: {
+                effect: 'fadeIn',
+                delayScale: 1.5,
+                delay: 50,
+                sync: false
+            }
+            // No out effect, so text stays visible
+        });
+    });
 }
 
 loadingAnimation()
